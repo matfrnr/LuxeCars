@@ -1,0 +1,424 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: red;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 8%;
+  background: white;
+  box-shadow: 0 0 10px 0 rgba(10, 10, 10, 0.2);
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 60px;
+  z-index: 5;
+}
+
+header button:hover {
+  filter: brightness(90%);
+  transition: 0.3s;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 100;
+  opacity: 0.7;
+}
+
+nav button {
+  padding: 5px 25px;
+  background: red;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  height: 30px;
+}
+
+.onglet a:hover {
+  color: red;
+  transition: 0.3s;
+}
+
+nav p a:nth-child(1) {
+  font-weight: 800;
+  font-size: 1.4em;
+}
+
+nav p:nth-child(1) span {
+  color: red;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 150px;
+}
+
+.main img {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 span {
+  color: red;
+}
+
+.achat {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  justify-content: center;
+}
+
+.achat button:hover {
+  background-color: black;
+  transition: background-color 0.2s linear;
+}
+
+.achat button {
+  padding: 10px 25px;
+  background: red;
+  color: white;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.achat p {
+  opacity: 0.7;
+  font-size: 1.3vw;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+section h1 {
+  font-size: 3vw;
+  margin-bottom: 3%;
+  font-weight: bold;
+}
+
+h2 {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  margin: 100px auto;
+}
+
+h2::before {
+  content: "";
+  width: 190px;
+  height: 5px;
+  background: red;
+  position: relative;
+  left: 185px;
+  top: -10px;
+  display: block;
+}
+
+h2::after {
+  content: "";
+  width: 190px;
+  height: 5px;
+  background: red;
+  position: relative;
+  right: 175px;
+  top: 30px;
+  display: block;
+}
+
+.voiture {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 95%;
+}
+
+.voiture img {
+  width: 500px;
+}
+
+.voiture div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.voiture button:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.voiture div p,
+.voiture div button {
+  margin: 5px 0;
+}
+
+.voiture div button {
+  background-color: red;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+
+.voiture p:nth-child(3) {
+  color: red;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.voiture p:nth-child(2) {
+  margin-top: 20px;
+}
+
+.dep span {
+  background-color: red;
+  width: 50px;
+  border-radius: 25px;
+  height: 50px;
+  display: block;
+}
+
+.dep {
+  display: flex;
+  gap: 50px;
+  margin: 0 50px;
+  align-items: center;
+}
+
+.dep div {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.dep h3,
+.dep p,
+.dep button {
+  margin: 10px;
+}
+
+.dep button {
+  border: 1px solid red;
+  background: none;
+  padding: 10px;
+  color: red;
+}
+
+.dep button:hover {
+  background: red;
+  color: white;
+  transition: 0.4s;
+}
+
+.dep p {
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  gap: 80px;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.info form {
+  display: flex;
+  flex-direction: column;
+}
+
+.carte {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 20px;
+}
+
+.carte iframe {
+  max-width: 95%;
+}
+.carte h3 {
+  margin-bottom: 15px;
+}
+
+.contact {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding: 15px;
+}
+
+.contact h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.contact input[type="submit"] {
+  background: red;
+  color: white;
+  border: none;
+  font-size: 1.2em;
+}
+footer {
+  background: black;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.copy a {
+  color: yellow;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 750px) {
+  nav {
+    padding: 15px;
+    font-size: 0.8rem;
+  }
+  .achat p {
+    width: 85%;
+    text-align: justify;
+    font-size: 2vw;
+    margin-top: 0;
+  }
+
+  .main {
+    display: block;
+    margin-top: 100px;
+  }
+  h2 {
+    margin-top: 80px;
+  }
+
+  .carte {
+    display: none;
+  }
+  textarea {
+    max-height: 70px;
+  }
+  .achat button {
+    display: none;
+  }
+  .dep {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .dep div {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .onglet {
+    display: none;
+  }
+  nav div p:nth-child(1) {
+    font-size: 1.3rem;
+  }
+  nav button {
+    display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  .achat p {
+    margin: 15px 0;
+    font-size: 2.2vw;
+  }
+
+  h2::before {
+    display: none;
+  }
+
+  h2::after {
+    display: none;
+  }
+  .contact {
+    display: none;
+  }
+  .titre {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .info {
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .carte,
+  .contact {
+    margin-bottom: 50px;
+  }
+  h2 {
+    margin: 60px 0;
+  }
+  .contact {
+    max-width: 50vw;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  textarea {
+    max-height: 100px;
+  }
+  .dep {
+    margin: 0 auto;
+    gap: 40px;
+    padding: 0 50px;
+  }
+  .voiture img {
+    width: 70%;
+  }
+  .main {
+    margin-top: 100px;
+  }
+}
